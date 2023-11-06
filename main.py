@@ -9,13 +9,13 @@ from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy.orm import relationship
 from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 # Optional: add contact me email functionality (Day 60)
 # import smtplib
 
 
-load_dotenv('d://dropbox/private/python/.env')
+# load_dotenv('d://dropbox/private/python/.env')
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
